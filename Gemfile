@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.3 '
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
@@ -23,10 +24,15 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'pry-rails'
 end
+
+group :test do
+  gem "nyan-cat-formatter"
+end
+
 # Use Stripe for payment
 gem 'stripe'
-# Use Bootstrap for css
-gem 'bootstrap'
+# Use bootstrap-sass as css
+gem 'bootstrap-sass'
 # Use Device for authentication(sign up/log in)
 gem 'devise'
 # Use figaro to hide secret keys
